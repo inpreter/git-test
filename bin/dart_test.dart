@@ -23,8 +23,8 @@ void main(List<String> arguments) {
 }
 
 String getResult(String userInput, String cpuInput) {
-  const cpuWin = 'cpu 승리';
-  const userWin = '사용자 승리';
+  const cpuWin = 'cpu 승리!!!!';
+  const userWin = '사용자 승리!!!!';
   const eq = '비김';
 
   late final String result;
