@@ -6,7 +6,7 @@ void main(List<String> arguments) {
   const selectList = ['가위', '바위', '보'];
 
   print('가위 바위 보 입력');
-  String? userInput;
+  String? userInput = null;
   while (userInput == null) {
     userInput = stdin.readLineSync(encoding: utf8);
   }
@@ -19,7 +19,7 @@ void main(List<String> arguments) {
 
   final String result = getResult(userInput, cpuInput);
 
-  print('결과 입니다 : $result');
+  print('결과 : $result');
 }
 
 String getResult(String userInput, String cpuInput) {
@@ -65,6 +65,7 @@ String getResult(String userInput, String cpuInput) {
         break;
     }
   }
+
 
   return result;
 }
